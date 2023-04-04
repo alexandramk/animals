@@ -1,0 +1,283 @@
+body{
+    font-family: 'EB Garamond', serif;
+    margin: 0;
+    box-sizing: border-box;
+}
+p{
+    font-size: 26px;
+    color: #999;
+    line-height: 1.6;
+}
+h1{
+    font-size: 40px;
+    color: #564a38;
+    text-align: center;
+}
+h2{
+    font-size: 28px;
+}
+h2,h3,h4{
+    color: #564a38;
+}
+#gallery h3{
+    text-align: center;
+}
+a {
+    text-decoration: none;
+    color:#080808;
+}
+.container{
+    width: 90%;
+    max-width: 960px;
+    margin: 0 auto;
+}
+.container h2{
+    text-align: center;
+    margin-top: 5px;
+}
+.blog .container .post p{
+    font-size: 25px;
+    color: rgb(105, 105, 105);
+}
+.container h3{
+    font-size: 20px;
+}
+.brand{
+    font-size: 30px;
+  
+}
+#about{
+    padding-top: 70px;
+}
+#news{
+    padding-top: 70px;
+}
+header{
+    min-height: 80px;
+}
+#topbar {
+    position: fixed;
+    padding-top: 10px;
+    text-align: center;
+    width: 100%;
+    background-color: #e4d1c4;
+    top: 0;
+    z-index: 999; /* подробно это свойство будет изучаться в поздних главах учебника,
+                   * а пока что просто добавьте его */         
+}
+.menu{
+    margin: 0;
+}
+.menu li {
+    display: inline-block;
+    text-transform: uppercase;
+    
+    margin-bottom: 10px;
+}
+.menu li a {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 30px;
+    padding-right: 30px;
+    display: block;
+    
+}
+.menu li a:hover {
+    background-color: #564a38;
+    color:#f1f1f1;
+}
+.jumbotron{
+    background-image: url(../IMG/главная3.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top center;
+    padding-top: 10px;
+    padding-bottom: 80px;
+    min-height: 440px;
+    text-align:center;
+    clear: both;
+    
+}
+.jumbotron h1{
+    color: #e4d1c4;
+}
+.blog{
+    clear: both;
+    padding-top: 35px;
+    padding-bottom: 50px;
+    background-color: #e4d1c461;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.blog h2{
+    text-align: center;
+}
+.blog .post p{
+    font-size: 20px;
+    color: #090101;
+}
+.blog .post h3{
+    font-size: 24px;
+}
+.photo{
+    width: 33.333333%;
+    padding: 10px;
+    box-sizing: border-box; 
+    text-align: left;
+    margin: auto;
+    float: left;
+}
+.photo figcaption{
+    color: rgb(74, 73, 73);
+    text-align: center;
+    margin-top: 15px;
+    font-size: 19px;
+}
+#gallery .photo{
+    color: rgb(59, 59, 59);
+    text-align: left;
+    margin-top: 20px;
+    margin: auto;
+    padding: 22px;
+    padding-bottom: 40px;
+    padding-top: 40px;
+}
+.text p{
+    color: rgb(20, 20, 20);
+    text-align: left;
+    margin-top: 20px;
+    margin: auto;
+    padding: 10px;
+    padding-top: 3px;
+    font-size: 19px;
+    padding-bottom: 10px;
+}
+#gallery .photo:hover{
+    opacity: 0.9;
+}
+#gallery:after{
+    display: block;
+    height: 0;
+    clear: both;
+}
+#gallery .photo img{
+    box-shadow: 0px 3px 3px 0 #212121;
+}
+
+footer{
+    clear: both;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    text-align: center; 
+    background-color: #564a38;
+    color: #ffffff;
+}
+footer .social{
+    padding-bottom: 20px;
+}
+footer .social a{
+    padding-left: 5px;
+    padding-right: 5px;
+    color: rgb(255, 254, 254);
+    font-size: 25px;
+}
+footer .social a:hover{
+    color: #e4d1c4;
+}
+@media(max-width:575px){
+    .blog.post{
+        padding-top: 30px;
+        display: inline-block;
+        max-width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+        clear: both;
+    }
+    .photo img{
+        float: left;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        clear: both;
+    }
+}
+img{
+    display: block;
+    max-width: 100%;
+    height: 300px;
+    width: 300px;
+}
+/* Кнопка, используемая для открытия формы чата - закреплена в нижней части страницы */
+.open-button {
+    background-color: #e4d1c4;
+    color: #564a38;
+    padding: 16px 20px;
+    border: none;
+    cursor: pointer;
+    opacity: 1;
+    position: fixed;
+    bottom: 23px;
+    right: 28px;
+    width: 180px;
+    font-size: 20px;
+    font-family: 'EB Garamond', serif;
+    border-radius: 20px;
+  }
+  /* Всплывающий чат - скрыт по умолчанию */
+  .chat-popup {
+    display: none;
+    position: fixed;
+    bottom: 0;
+    right: 15px;
+    border: 1px solid #a4a4a4;
+    z-index: 9;
+    text-align: center;
+    border-radius: 20px;
+    font-family: 'EB Garamond', serif;
+  }
+  /* Добавление стилей в контейнер формы */
+  .form-container {
+    max-width: 300px;
+    padding: 10px;
+    background-color: white;
+    border-radius: 20px;
+    font-family: 'EB Garamond', serif;
+  }
+  /* Полноразмерная текстовая область */
+  .form-container textarea {
+    width: 280px;
+    margin: 0 auto;
+    margin-bottom: 10px;
+    border: none;
+    background: #f1f1f1;
+    resize: none;
+    min-height: 200px;
+    font-family: 'EB Garamond', serif;
+  }
+  /* Когда текстовая область получит фокус*/
+  .form-container textarea:focus {
+    background-color: #ddd;
+    outline: none;
+  }
+  /*стиль для кнопки отправить/кнопка */
+  .form-container .btn {
+    background-color: #e4d1c4;
+    color: rgb(0, 0, 0);
+    padding: 16px 20px;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    width: 100%;
+    margin-bottom:10px;
+    opacity: 1;
+    font-family: 'EB Garamond', serif;
+  }
+  .form-container .cancel {
+    background-color: rgb(52, 52, 52);
+    color: #ffffff;
+    font-family: 'EB Garamond', serif;
+  }
+  /*эффекты наведения на кнопки */
+  .form-container .btn:hover, .open-button:hover {
+    opacity: 0.6;
+  }
