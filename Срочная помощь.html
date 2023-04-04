@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Срочная помощь</title>
+    <link href="../CSS/Главная страница.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,500;1,600;1,700;1,800&display=swap" rel="stylesheet">
+    <script src="https://use.fontawesome.com/0ca06f29a6.js"></script>
+</head>
+<body>
+    <header>
+        <div id="topbar">
+            <div class="container">
+                <nav>
+                    <ul class="menu">
+                        <li><a href="Главная страница.html">Главная</a></li>
+                        <li><a href="Кошки.html">Кошки</a></li>
+                        <li><a href="Собаки.html">Собаки</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <div class="container"> 
+        <h2>Нуждающиеся животные</h2>
+           <div id="gallery">
+            <figure class="photo">
+                <a href="../IMG/img/1.jpg" data-lightbox="roadtrip">
+                    <img src="../IMG/img/1.jpg">
+                </a> 
+                <figcaption>Собаку сначала бросили в приют. За сутки стационара, капельниц и анализов ушло 3400, а впереди еще целый курс лечения энтерита. Пожалуйста, не проходите мимо. Карта сбербанк: 42763020000016096.</figcaption>
+            </figure>
+            <figure class="photo">
+                <a href="../IMG/img/2.jpg" data-lightbox="roadtrip">
+                    <img src="../IMG/img/2.jpg">
+                </a>
+                <figcaption>Помогите оплатить чеки. Котик еще отходит от кастрации в зооковчеге, я не знаю, сколько он там пробудет, а чеки приходят каждый день. Больше некому помочь, телефон: 89618269805. </figcaption>
+            </figure>
+            <figure class="photo">
+                <a href="../IMG/img/3.jpg" data-lightbox="roadtrip">
+                    <img src="../IMG/img/3.jpg">
+                </a>
+                <figcaption>Кошку сбили, она в очень плохом состоянии, нужна помощь. Оказалось: спинальник, еще и беременная. Срочный сбор на зоотакси до Краснодара: 3500, по чеку 2800. Сбор на привязанный номер: 89284605801  </figcaption>
+            </figure>
+                
+            <figure class="photo">
+                <a href="../IMG/img/4.jpg" data-lightbox="roadtrip">
+                    <img src="../IMG/img/4.jpg">
+                </a>
+                <figcaption>У Марта обнаружили рану на лапе, оказалось, что порвался абсцесс и там огромная полость на всю лапу. Задать вопросы и отправить деньги можно по привязанному номеру: 89094696084.</figcaption>
+            </figure>
+            <figure class="photo">
+                <a href="../IMG/img/5.jpg" data-lightbox="roadtrip">
+                    <img src="../IMG/img/5.jpg">
+                </a>
+                <figcaption>Прошу помочь спасённой собаке. Сейчас он заехал на платную передержку, очень нужна помощь в оплате. Задать вопросы и отправить деньги можно по привязанному номеру: 89094707766</figcaption>
+            </figure>
+            <figure class="photo">
+                <a href="../IMG/img/6.jpg" data-lightbox="roadtrip">
+                    <img src="../IMG/img/6.jpg">
+                </a>
+                <figcaption>В след за Булочкой заболел энтеритом и Илюша. Мы не знаем откуда и как это произошло, возможно кто-то из гостей принес на обуви. Он на стационаре в зооковчеге. Номер карты сбербанка: 4276302000016096</figcaption>
+            </figure>
+            <figure class="photo">
+                <a href="../IMG/img/7.jpg" data-lightbox="roadtrip">
+                    <img src="../IMG/img/7.jpg">
+                </a>
+                <figcaption> 
+                    Кошка не могла родить 3 дня. Ножка мёртвого котёнка торчала из петли, остальные котята тоже умерли. Очень нужны деньги на операцию и 3000 на первое время. Номер: 89184293868</figcaption>
+            </figure>
+            <figure class="photo">
+                <a href="../IMG/img/8.jpg" data-lightbox="roadtrip">
+                    <img src="../IMG/img/8.jpg">
+                </a>
+                <figcaption>Кот ползал 3 дня в канаве. Привезли в клинеке, у него ЧМТ, один глаз слепой от удара, второй выбит. Он не может кушать и пить, сейчас он на капельницах в зооковчеге. Номер для оказания помощи: 89094696084</figcaption>
+            </figure>
+            <figure class="photo">
+                <a href="../IMG/img/9.jpg" data-lightbox="roadtrip">
+                    <img src="../IMG/img/9.jpg">
+                </a>
+                <figcaption>Лежит пятый день, иногда встаёт, кушает, не лает. Срочно нужна помощь и деньги на лечение, нужен куратор. Номер для оказания помощи: 89284235980.</figcaption>
+            </figure>     
+            </div>
+        </div> 
+         <!--Чат-->
+    <button class="open-button" onclick="openForm()">Чат</button>
+    <div class="chat-popup" id="myForm">
+    <form action="../action_page.php" class="form-container">
+        <label for="msg"><b>Сообщение</b></label>
+        <textarea placeholder="Тип сообщения.." name="msg" required>
+        </textarea>
+        <button type="submit" class="btn">Отправить</button>
+        <button type="button" class="btn cancel" onclick="closeForm()">Закрыть</button>
+    </form>
+    </div>
+      <script>
+        function openForm() {
+  document.getElementById("myForm").style.display = "block";
+}
+function closeForm() {
+  document.getElementById("myForm").style.display = "none";
+}
+        </script>
+    <footer>
+        <div class="container">
+            <div class="social">
+                <a href="https://vk.com/dog_maikop"><i class="fa fa-vk"></i></a>
+                <a href="https://ok.ru/dogmaikop"><i class="fa fa-odnoklassniki"></i></a>
+                
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
