@@ -1,0 +1,110 @@
+    <!DOCTYPE html>
+    <html>
+    <head>
+        <title>Собаки</title>
+        <link href="CSS/style.css" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,500;1,600;1,700;1,800&display=swap" rel="stylesheet">
+        <script src="https://use.fontawesome.com/0ca06f29a6.js"></script>
+    </head>
+    <body>
+        <header>
+            <div id="topbar">
+                <div class="container">
+                    <nav>
+                        <ul class="menu">
+                            <li><a href="index.html">Главная</a></li>
+                            <li><a href="Срочная помощь.html">Срочная помощь</a></li>
+                            <li><a href="Кошки.html">Кошки</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </header>
+        <div class="container"> 
+            <h2>Наши собаки</h2>
+            <div id="gallery">
+                <figure class="photo">
+                    <a href="IMG/img. dogs/грусни собака.jpg" data-lightbox="roadtrip">
+                        <img src="IMG/img. dogs/грусни собака.jpg">
+                    </a> 
+                    <figcaption>Собаку вчера прооперировали, все прошло хорошо. Добрая, умная девочка. 89615058138.</figcaption>
+                </figure>
+                <figure class="photo">
+                    <a href="IMG/img. dogs/собаки запасные.jpg" data-lightbox="roadtrip">
+                        <img src="IMG/img. dogs/собаки запасные.jpg">
+                    </a>
+                    <figcaption>Отдаю двух собак, сделаны две прививки, есть паспорта, но не стерилизованы. Телефон: 89184801695. </figcaption>
+                </figure>
+                <figure class="photo">
+                    <a href="IMG/img. dogs/пупся 2.jpg" data-lightbox="roadtrip">
+                        <img src="IMG/img. dogs/пупся 2.jpg">
+                    </a>
+                    <figcaption>В районе Восход увидели маленького щеночка. Похож на таксу, очень хочет найти своего хозяина! 89615316236.
+                    </figure>
+                <figure class="photo">
+                    <a href="IMG/img. dogs/собака 4.jpg" data-lightbox="roadtrip">
+                        <img src="IMG/img. dogs/собака 4.jpg">
+                    </a>
+                    <figcaption>Щенку где-то 3.5 месяца, обработан и вакцинирован. Активный и игривый. Телефон: 89184219019.  </figcaption>
+                </figure>
+                <figure class="photo">
+                    <a href="IMG/img. dogs/собака 5.jpg" data-lightbox="roadtrip">
+                        <img src="IMG/img. dogs/собака 5.jpg">
+                    </a>
+                    <figcaption>Добрая собака Лора, стерилизованная и привитая. Нужен выгул и много движений 89034650071.</figcaption>
+                </figure>
+                <figure class="photo">
+                    <a href="IMG/img. dogs/собака 6.jpg" data-lightbox="roadtrip">
+                        <img src="IMG/img. dogs/собака 6.jpg">
+                    </a>
+                    <figcaption>Мальчику будет 2 месяца. Обработан и готовится к вакцинации. Привезем в любой район 89384947920. </figcaption>
+                </figure>
+                <figure class="photo">
+                    <a href="IMG/img. dogs/собака 7.jpg" data-lightbox="roadtrip">
+                        <img src="IMG/img. dogs/собака 7.jpg">
+                    </a>
+                    <figcaption>Такса ищет дом, стерилизованная, ей примерно 4-5 лет. Привезу знакомиться в Майкоп и окрестности 89034650071.</figcaption>
+                </figure>
+                <figure class="photo">
+                    <a href="IMG/img. dogs/собака 8.jpg" data-lightbox="roadtrip">
+                        <img src="IMG/img. dogs/собака 8.jpg">
+                    </a>
+                    <figcaption>Девочка, среднего роста, примерно 4.5 месяца. Привита и обработана от глистов. Привезу к дому: 89880823370. </figcaption>
+                </figure>
+                <figure class="photo">
+                    <a href="IMG/img. dogs/собака 9.jpg" data-lightbox="roadtrip">
+                        <img src="IMG/img. dogs/собака 9.jpg">
+                    </a>
+                    <figcaption>Кобель ищет дом, возраст 11-12 месяцев. Хорошо ладит с кошками и другими собаками. Привезу знакомиться 89034650071. </figcaption>
+                </figure>     
+                </div>
+            </div> 
+            <!--Чат-->
+        <button class="open-button" onclick="openForm()">Чат</button>
+        <div class="chat-popup" id="myForm">
+        <form action="../action_page.php" class="form-container">
+            <label for="msg"><b>Сообщение</b></label>
+            <textarea placeholder="Тип сообщения.." name="msg" required>
+            </textarea>
+            <button type="submit" class="btn">Отправить</button>
+            <button type="button" class="btn cancel" onclick="closeForm()">Закрыть</button>
+        </form>
+        </div>
+        <script>
+            function openForm() {
+    document.getElementById("myForm").style.display = "block";
+    }
+    function closeForm() {
+    document.getElementById("myForm").style.display = "none";
+    }
+            </script>
+        <footer>
+        <div class="container">
+            <div class="social">
+                <a href="https://vk.com/dog_maikop"><i class="fa fa-vk"></i></a>
+                <a href="https://ok.ru/dogmaikop"><i class="fa fa-odnoklassniki"></i></a>
+               
+        </div>
+        </footer>
+    </body>
+    </html>
